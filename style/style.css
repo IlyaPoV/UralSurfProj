@@ -10,6 +10,10 @@ h2 {
   font-family: UniSans, Arial, sans-serif;
   font-weight: bold;
   font-size: 48px; }
+  @media (max-width: 420px) {
+    h2 {
+      font-size: 24px;
+      line-height: 32px; } }
 
 p {
   font-size: 32px;
@@ -17,13 +21,24 @@ p {
   font-family: 'Uni Sans';
   font-weight: regular;
   font-style: normal; }
+  @media (max-width: 420px) {
+    p {
+      font-size: 16px;
+      line-height: 24px; } }
 
 .container {
   margin: 0 auto;
   width: 1000px; }
+  @media (max-width: 768px) {
+    .container {
+      width: 610px; } }
+  @media (max-width: 420px) {
+    .container {
+      width: 300px; } }
 
 header {
   background-image: url(../img/header-bg-1280.jpg);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -31,6 +46,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media (max-width: 420px) {
+    header {
+      background-position: -500px 0; } }
 
 .main-nav {
   min-height: 120px;
@@ -46,17 +64,31 @@ header {
   display: flex;
   list-style: none;
   align-items: center;
-  min-height: 120px; }
+  min-height: 120px;
+  position: relative; }
   .user-nav a {
     text-decoration: none;
     font-family: UniSans, Arial, sans-serif;
     font-size: 26px;
     color: #000; }
+  @media (max-width: 420px) {
+    .user-nav::before {
+      content: "";
+      width: 40px;
+      height: 4px;
+      background-color: #fff;
+      position: absolute;
+      right: 0;
+      box-shadow: 0px 10px 0px 0px #fff, 0px -10px 0px 0px #fff; } }
 
 .user-nav__item a {
   display: block;
   padding: 10px 21px;
   background-color: #fff; }
+
+@media (max-width: 420px) {
+  .user-nav__item {
+    display: none; } }
 
 .trip {
   margin-right: 35px; }
@@ -70,11 +102,18 @@ header {
   width: 665px;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.65); }
+  @media (max-width: 420px) {
+    .slogan {
+      width: 300px; } }
   .slogan b {
     font-family: UniSans, Arial, sans-serif;
     font-weight: bold;
     font-size: 48px;
     align-self: center; }
+    @media (max-width: 420px) {
+      .slogan b {
+        font-size: 32px;
+        line-height: 42px; } }
 
 .header-social {
   width: 154px;
@@ -105,6 +144,10 @@ header {
     font-weight: bold;
     font-size: 48px;
     line-height: 50px; }
+    @media (max-width: 420px) {
+      .about-us h1 {
+        font-size: 24px;
+        line-height: 32px; } }
   .about-us p {
     margin: 0;
     padding: 0;
@@ -115,6 +158,10 @@ header {
     font-style: normal;
     width: 644px;
     min-height: 207px; }
+    @media (max-width: 420px) {
+      .about-us p {
+        font-size: 15px;
+        line-height: 26px; } }
 
 .join-us {
   height: 100vh;
@@ -158,6 +205,12 @@ header {
   font-family: UniSans, Arial, sans-serif;
   font-size: 48px;
   font-weight: bold; }
+  @media (max-width: 420px) {
+    .training h2 {
+      width: auto;
+      height: auto;
+      font-size: 24px;
+      line-height: 32px; } }
 
 .pref-list {
   margin: 0;
@@ -167,6 +220,9 @@ header {
   display: -ms-flex;
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 420px) {
+    .pref-list {
+      overflow-x: scroll; } }
 
 .pref-list__item {
   width: 241px;
@@ -203,12 +259,21 @@ header {
   display: -ms-flex;
   display: flex;
   justify-content: center; }
+  @media (max-width: 420px) {
+    .training-promo__headline,
+    .promo-headline {
+      width: auto; } }
   .training-promo__headline h2,
   .promo-headline h2 {
     font-family: UniSans, Arial, sans-serif;
     font-weight: bold;
     font-size: 48px;
     align-self: center; }
+    @media (max-width: 420px) {
+      .training-promo__headline h2,
+      .promo-headline h2 {
+        font-size: 24px;
+        line-height: 32px; } }
 
 .travel-description {
   padding: 120px 0; }
@@ -223,6 +288,11 @@ header {
           column-count: 2;
   -webkit-column-gap: 29px;
           column-gap: 29px; }
+  @media (max-width: 420px) {
+    .column {
+      -webkit-column-count: 1;
+              column-count: 1;
+      width: auto; } }
   .column p {
     font-size: 24px;
     line-height: 28px;
@@ -287,6 +357,9 @@ header {
   grid-template-columns: 130px 130px;
   grid-template-rows: 34px 34px 34px 34px;
   grid-template-areas: ". ." ". ." ". ." ". ."; }
+  @media (max-width: 420px) {
+    .footer-menu__list {
+      display: none; } }
 
 .footer-menu__item a {
   text-decoration: none;
@@ -296,6 +369,9 @@ header {
 
 .footer-form {
   margin-top: 50px; }
+  @media (max-width: 420px) {
+    .footer-form {
+      display: none; } }
 
 .footer-form label {
   display: block;
@@ -310,6 +386,9 @@ header {
   background-color: inherit;
   border: 0;
   border-bottom: 1px solid #787878; }
+  @media (max-width: 420px) {
+    .footer-form input {
+      width: 150px; } }
 
 .submit-button {
   border: 0;
@@ -336,6 +415,9 @@ header {
   border: none;
   margin-top: 15px;
   box-sizing: border-box; }
+  @media (max-width: 420px) {
+    .input-place {
+      width: 300px; } }
 
 .submit-place {
   margin-top: 15px;
