@@ -169,6 +169,10 @@ header {
         line-height: 26px;
         min-height: auto; } }
 
+.about-us__description {
+  font-size: 28px;
+  line-height: 56px; }
+
 .join-us {
   height: 100vh;
   background-image: url(../img/join-us.jpg);
