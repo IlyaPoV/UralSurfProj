@@ -172,6 +172,11 @@ header {
 .about-us__description {
   font-size: 28px;
   line-height: 56px; }
+  @media (max-width: 420px) {
+    .about-us__description {
+      font-size: 15px;
+      line-height: 26px;
+      min-height: auto; } }
 
 .join-us {
   height: 100vh;
