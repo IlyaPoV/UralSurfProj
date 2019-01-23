@@ -215,6 +215,8 @@ header {
 .pref-list {
   margin: 0;
   padding: 0;
+  width: 1000px;
+  margin: 0 auto;
   margin-top: 75px;
   list-style: none;
   display: -ms-flex;
@@ -222,7 +224,8 @@ header {
   justify-content: space-between; }
   @media (max-width: 420px) {
     .pref-list {
-      overflow-x: scroll; } }
+      overflow-x: scroll;
+      width: auto; } }
 
 .pref-list__item {
   width: 241px;
